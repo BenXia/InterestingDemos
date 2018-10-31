@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6CB5F7D15B565E700A41A19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB5F7C15B565E700A41A19 /* UIKit.framework */; };
+		C6CB5F7F15B565E700A41A19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB5F7E15B565E700A41A19 /* Foundation.framework */; };
+		C6CB5F8115B565E700A41A19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB5F8015B565E700A41A19 /* CoreGraphics.framework */; };
+		C6CB5F8715B565E700A41A19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6CB5F8515B565E700A41A19 /* InfoPlist.strings */; };
+		C6CB5F8915B565E700A41A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB5F8815B565E700A41A19 /* main.m */; };
+		C6CB5F8D15B565E700A41A19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB5F8C15B565E700A41A19 /* AppDelegate.m */; };
+		C6CB5F9015B565E700A41A19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB5F8F15B565E700A41A19 /* ViewController.m */; };
+		C6CB5F9315B565E700A41A19 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6CB5F9115B565E700A41A19 /* ViewController.xib */; };
+		C6CB5F9E15B5660500A41A19 /* CloudBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CB5F9915B5660500A41A19 /* CloudBG@2x.png */; };
+		C6CB5F9F15B5660500A41A19 /* CloudButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB5F9B15B5660500A41A19 /* CloudButton.m */; };
+		C6CB5FA015B5660500A41A19 /* CloudView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CB5F9D15B5660500A41A19 /* CloudView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C6CB5F7815B565E700A41A19 /* CloudLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CB5F7C15B565E700A41A19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C6CB5F7E15B565E700A41A19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C6CB5F8015B565E700A41A19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C6CB5F8415B565E700A41A19 /* CloudLabelDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudLabelDemo-Info.plist"; sourceTree = "<group>"; };
+		C6CB5F8615B565E700A41A19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6CB5F8815B565E700A41A19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6CB5F8A15B565E700A41A19 /* CloudLabelDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudLabelDemo-Prefix.pch"; sourceTree = "<group>"; };
+		C6CB5F8B15B565E700A41A19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6CB5F8C15B565E700A41A19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6CB5F8E15B565E700A41A19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C6CB5F8F15B565E700A41A19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C6CB5F9215B565E700A41A19 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C6CB5F9915B5660500A41A19 /* CloudBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CloudBG@2x.png"; sourceTree = "<group>"; };
+		C6CB5F9A15B5660500A41A19 /* CloudButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudButton.h; sourceTree = "<group>"; };
+		C6CB5F9B15B5660500A41A19 /* CloudButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudButton.m; sourceTree = "<group>"; };
+		C6CB5F9C15B5660500A41A19 /* CloudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudView.h; sourceTree = "<group>"; };
+		C6CB5F9D15B5660500A41A19 /* CloudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6CB5F7515B565E700A41A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CB5F7D15B565E700A41A19 /* UIKit.framework in Frameworks */,
+				C6CB5F7F15B565E700A41A19 /* Foundation.framework in Frameworks */,
+				C6CB5F8115B565E700A41A19 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6CB5F6D15B565E700A41A19 = {
+			isa = PBXGroup;
+			children = (
+				C6CB5F8215B565E700A41A19 /* CloudLabelDemo */,
+				C6CB5F7B15B565E700A41A19 /* Frameworks */,
+				C6CB5F7915B565E700A41A19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6CB5F7915B565E700A41A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB5F7815B565E700A41A19 /* CloudLabelDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6CB5F7B15B565E700A41A19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB5F7C15B565E700A41A19 /* UIKit.framework */,
+				C6CB5F7E15B565E700A41A19 /* Foundation.framework */,
+				C6CB5F8015B565E700A41A19 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6CB5F8215B565E700A41A19 /* CloudLabelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB5F8B15B565E700A41A19 /* AppDelegate.h */,
+				C6CB5F8C15B565E700A41A19 /* AppDelegate.m */,
+				C6CB5F8E15B565E700A41A19 /* ViewController.h */,
+				C6CB5F8F15B565E700A41A19 /* ViewController.m */,
+				C6CB5F9115B565E700A41A19 /* ViewController.xib */,
+				C6CB5F9915B5660500A41A19 /* CloudBG@2x.png */,
+				C6CB5F9A15B5660500A41A19 /* CloudButton.h */,
+				C6CB5F9B15B5660500A41A19 /* CloudButton.m */,
+				C6CB5F9C15B5660500A41A19 /* CloudView.h */,
+				C6CB5F9D15B5660500A41A19 /* CloudView.m */,
+				C6CB5F8315B565E700A41A19 /* Supporting Files */,
+			);
+			path = CloudLabelDemo;
+			sourceTree = "<group>";
+		};
+		C6CB5F8315B565E700A41A19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB5F8415B565E700A41A19 /* CloudLabelDemo-Info.plist */,
+				C6CB5F8515B565E700A41A19 /* InfoPlist.strings */,
+				C6CB5F8815B565E700A41A19 /* main.m */,
+				C6CB5F8A15B565E700A41A19 /* CloudLabelDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6CB5F7715B565E700A41A19 /* CloudLabelDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CB5F9615B565E700A41A19 /* Build configuration list for PBXNativeTarget "CloudLabelDemo" */;
+			buildPhases = (
+				C6CB5F7415B565E700A41A19 /* Sources */,
+				C6CB5F7515B565E700A41A19 /* Frameworks */,
+				C6CB5F7615B565E700A41A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudLabelDemo;
+			productName = CloudLabelDemo;
+			productReference = C6CB5F7815B565E700A41A19 /* CloudLabelDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6CB5F6F15B565E700A41A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C6CB5F7215B565E700A41A19 /* Build configuration list for PBXProject "CloudLabelDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C6CB5F6D15B565E700A41A19;
+			productRefGroup = C6CB5F7915B565E700A41A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6CB5F7715B565E700A41A19 /* CloudLabelDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6CB5F7615B565E700A41A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CB5F8715B565E700A41A19 /* InfoPlist.strings in Resources */,
+				C6CB5F9315B565E700A41A19 /* ViewController.xib in Resources */,
+				C6CB5F9E15B5660500A41A19 /* CloudBG@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6CB5F7415B565E700A41A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CB5F8915B565E700A41A19 /* main.m in Sources */,
+				C6CB5F8D15B565E700A41A19 /* AppDelegate.m in Sources */,
+				C6CB5F9015B565E700A41A19 /* ViewController.m in Sources */,
+				C6CB5F9F15B5660500A41A19 /* CloudButton.m in Sources */,
+				C6CB5FA015B5660500A41A19 /* CloudView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6CB5F8515B565E700A41A19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6CB5F8615B565E700A41A19 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C6CB5F9115B565E700A41A19 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6CB5F9215B565E700A41A19 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6CB5F9415B565E700A41A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C6CB5F9515B565E700A41A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6CB5F9715B565E700A41A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudLabelDemo/CloudLabelDemo-Prefix.pch";
+				INFOPLIST_FILE = "CloudLabelDemo/CloudLabelDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C6CB5F9815B565E700A41A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudLabelDemo/CloudLabelDemo-Prefix.pch";
+				INFOPLIST_FILE = "CloudLabelDemo/CloudLabelDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6CB5F7215B565E700A41A19 /* Build configuration list for PBXProject "CloudLabelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CB5F9415B565E700A41A19 /* Debug */,
+				C6CB5F9515B565E700A41A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CB5F9615B565E700A41A19 /* Build configuration list for PBXNativeTarget "CloudLabelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CB5F9715B565E700A41A19 /* Debug */,
+				C6CB5F9815B565E700A41A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6CB5F6F15B565E700A41A19 /* Project object */;
+}

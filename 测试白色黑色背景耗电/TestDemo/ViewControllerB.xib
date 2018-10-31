@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerB">
+            <connections>
+                <outlet property="customView" destination="XBl-16-yzn" id="iqM-9q-G70"/>
+                <outlet property="labelB" destination="Fdj-76-4Ow" id="3DG-2i-gku"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-Q9-WpJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="G13-Uy-MeK"/>
+                        <outlet property="delegate" destination="-1" id="iDD-je-LxW"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gPc-Q9-WpJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M1q-vX-aYj"/>
+                <constraint firstAttribute="trailing" secondItem="gPc-Q9-WpJ" secondAttribute="trailing" id="Vuw-0f-6RK"/>
+                <constraint firstAttribute="bottom" secondItem="gPc-Q9-WpJ" secondAttribute="bottom" id="lXr-hE-HNh"/>
+                <constraint firstItem="gPc-Q9-WpJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qI1-jw-Xhf"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="XBl-16-yzn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="355" translatesAutoresizingMaskIntoConstraints="NO" id="Fdj-76-4Ow">
+                    <rect key="frame" x="10" y="10" width="355" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="fPC-Ig-CR9"/>
+                    </constraints>
+                    <string key="text">as;dfa;sdjf;aksjdf;aksjdf;akjsd;fjkas;dkfja;sdkfja;sdkjfa;skdjf;aksdf;aksjdf;aksjdf;ajsdf;ajs;dfkj;asjkdf;aksjdf;lakjfd;lsaasdfljkasdlfjasldfk陶澄</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Fdj-76-4Ow" firstAttribute="leading" secondItem="XBl-16-yzn" secondAttribute="leading" constant="10" id="BXA-W2-4jt"/>
+                <constraint firstItem="Fdj-76-4Ow" firstAttribute="top" secondItem="XBl-16-yzn" secondAttribute="top" constant="10" id="l8x-FE-uLi"/>
+                <constraint firstAttribute="trailing" secondItem="Fdj-76-4Ow" secondAttribute="trailing" constant="10" id="zWg-GU-p75"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+</document>
