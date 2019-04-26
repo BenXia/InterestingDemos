@@ -13,6 +13,8 @@
 		539536921D72C744001E4910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539536911D72C744001E4910 /* Assets.xcassets */; };
 		539536951D72C744001E4910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539536931D72C744001E4910 /* LaunchScreen.storyboard */; };
 		5395369E1D72C93C001E4910 /* ZDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5395369D1D72C93C001E4910 /* ZDNavigationController.m */; };
+		B5C25C1722729E87001DEE36 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C25C1622729E87001DEE36 /* ViewController.xib */; };
+		B5C25C1B2272B187001DEE36 /* ZDSecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C25C1A2272B187001DEE36 /* ZDSecondController.xib */; };
 		FC4142EB1F6A18470095A15A /* ZDSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4142EA1F6A18470095A15A /* ZDSecondController.m */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		539536961D72C744001E4910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5395369C1D72C93C001E4910 /* ZDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDNavigationController.h; sourceTree = "<group>"; };
 		5395369D1D72C93C001E4910 /* ZDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDNavigationController.m; sourceTree = "<group>"; };
+		B5C25C1622729E87001DEE36 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		B5C25C1A2272B187001DEE36 /* ZDSecondController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZDSecondController.xib; sourceTree = "<group>"; };
 		FC4142E91F6A18470095A15A /* ZDSecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSecondController.h; sourceTree = "<group>"; };
 		FC4142EA1F6A18470095A15A /* ZDSecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSecondController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,8 +72,10 @@
 				5395369D1D72C93C001E4910 /* ZDNavigationController.m */,
 				5395368B1D72C744001E4910 /* ViewController.h */,
 				5395368C1D72C744001E4910 /* ViewController.m */,
+				B5C25C1622729E87001DEE36 /* ViewController.xib */,
 				FC4142E91F6A18470095A15A /* ZDSecondController.h */,
 				FC4142EA1F6A18470095A15A /* ZDSecondController.m */,
+				B5C25C1A2272B187001DEE36 /* ZDSecondController.xib */,
 				539536911D72C744001E4910 /* Assets.xcassets */,
 				539536931D72C744001E4910 /* LaunchScreen.storyboard */,
 				539536961D72C744001E4910 /* Info.plist */,
@@ -148,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				539536951D72C744001E4910 /* LaunchScreen.storyboard in Resources */,
+				B5C25C1B2272B187001DEE36 /* ZDSecondController.xib in Resources */,
+				B5C25C1722729E87001DEE36 /* ViewController.xib in Resources */,
 				539536921D72C744001E4910 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,8 @@
 
 @interface ZDSecondController ()<UIViewControllerRestoration>
 
+@property (weak, nonatomic) IBOutlet UITextField *customTextField;
+
 @end
 
 @implementation ZDSecondController
@@ -32,6 +34,8 @@
 - (void)encodeRestorableStateWithCoder:(NSCoder *)coder{
 
     [super encodeRestorableStateWithCoder:coder];
+    
+    [coder encodeObject:self.customTextField.text forKey:@"bbbbb"];
 
 }
 //为恢复状态属性解码(在viewDidLoad调用后,调用该方法)
@@ -39,6 +43,7 @@
 
     [super decodeRestorableStateWithCoder:coder];
 
+    self.customTextField.text = [coder decodeObjectForKey:@"bbbbb"];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

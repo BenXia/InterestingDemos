@@ -10,6 +10,7 @@
 #import "ZDSecondController.h"
 
 @interface ViewController ()<UIViewControllerRestoration>
+@property (weak, nonatomic) IBOutlet UILabel *customLabel;
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,copy) NSString *age;
 @property (nonatomic,strong) UILabel *nameL;
@@ -42,6 +43,7 @@
     [coder encodeObject:self.nameT.text forKey:@"name"];
     //记录输入的年龄
     [coder encodeObject:self.ageT.text forKey:@"age"];
+    [coder encodeObject:self.customLabel.text forKey:@"aaaaa"];
 }
 //为恢复状态属性解码(在viewDidLoad调用后,调用该方法)
 - (void)decodeRestorableStateWithCoder:(NSCoder *)coder{
@@ -49,6 +51,7 @@
     [super decodeRestorableStateWithCoder:coder];
     self.nameL.text = [coder decodeObjectForKey:@"name"];
     self.ageL.text = [coder decodeObjectForKey:@"age"];
+    self.customLabel.text = [coder decodeObjectForKey:@"aaaaa"];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -75,6 +78,8 @@
     btn.backgroundColor = [UIColor redColor];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    self.customLabel.text = [NSString stringWithFormat:@"%@", [NSDate date]];
 }
 
 - (void)btnClick {
