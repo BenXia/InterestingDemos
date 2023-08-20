@@ -30,6 +30,13 @@
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application shouldSaveSecureApplicationState:(NSCoder *)coder{
+    return YES;
+}
+- (BOOL)application:(UIApplication *)application shouldRestoreSecureApplicationState:(NSCoder *)coder{
+    return YES;
+}
+
 //应用恢复,在该代理方法中创建只声明了重用标识,未声明重用类型的对象
 - (UIViewController *)application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder{
     //identifierComponents的最后一个元素就是其恢复标识

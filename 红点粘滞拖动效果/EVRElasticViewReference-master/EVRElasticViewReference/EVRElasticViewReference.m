@@ -230,7 +230,9 @@ const CGFloat EVRElasticViewReferenceAnimationDuration = .5f;
     [self _removeDampingLayer];
     
     self.originLayer = [self newLayer];
+//    self.originLayer.fillColor = [[UIColor redColor] CGColor];
     self.dampingLayer = [self newLayer];
+//    self.dampingLayer.fillColor = [[UIColor blueColor] CGColor];
     
     if ([self referencedSnapshotView]) {
         [[[self attchedView] layer] insertSublayer:[self originLayer] below:[[self referencedSnapshotView] layer]];
@@ -305,16 +307,21 @@ const CGFloat EVRElasticViewReferenceAnimationDuration = .5f;
     // Add two curve lines to align both referenced view and referenced snapshot view.
     [dampingLayerPath moveToPoint:fromPoint1];
     [dampingLayerPath addLineToPoint:fromPoint2];
+//    [dampingLayerPath addLineToPoint:controlPoint2];
+//    [dampingLayerPath addLineToPoint:toPoint2];
     [dampingLayerPath addQuadCurveToPoint:toPoint2 controlPoint:controlPoint2];
     [dampingLayerPath addLineToPoint:toPoint1];
+//    [dampingLayerPath addLineToPoint:controlPoint1];
+//    [dampingLayerPath addLineToPoint:fromPoint1];
     [dampingLayerPath addQuadCurveToPoint:fromPoint1 controlPoint:controlPoint1];
     
+//    NSLog(@"self.dampingLayer: %@\n", self.dampingLayer);
     self.dampingLayer.path = [dampingLayerPath CGPath];
     
     UIBezierPath *originLayerPath = [UIBezierPath bezierPath];
     // The origin view replaced by an circle layer, scaled by disitance.
     [originLayerPath addArcWithCenter:fromCenter radius:fromRadius startAngle:angle endAngle:(M_PI * 2 + angle) clockwise:YES];
-    
+
     self.originLayer.path = [originLayerPath CGPath];
 }
 

@@ -53,6 +53,8 @@
     
     CGRect imageRect = self.parallaxImage.frame;
     imageRect.origin.y = -(difference/2)+move;
+    
+    NSLog(@"imageRect.origin.y: %f\n", imageRect.origin.y);
     self.parallaxImage.frame = imageRect;
 }
 

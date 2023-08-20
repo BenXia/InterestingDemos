@@ -300,7 +300,7 @@
 	CGFloat z = [self coordinateForNormalizedValue:point.z withinRangeOffset:1];
 	
 	view.transform = CGAffineTransformScale(CGAffineTransformIdentity, z, z);
-	view.layer.zPosition = z;
+    view.layer.zPosition = z > FLT_MAX ? FLT_MAX : z < -FLT_MAX ? -FLT_MAX : z;
 }
 
 - (void)layoutViews {

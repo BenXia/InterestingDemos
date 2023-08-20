@@ -233,7 +233,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				ko,
 			);
 			mainGroup = 74E2F35415F04E4800D21D1A;
 			productRefGroup = 74E2F36015F04E4800D21D1A /* Products */;
@@ -345,9 +347,11 @@
 		74E2F38415F04E4800D21D1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TKContactPicker/TKContactPicker-Prefix.pch";
 				INFOPLIST_FILE = "TKContactPicker/TKContactPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = TKContactPicker;
 				WRAPPER_EXTENSION = app;
 			};
@@ -356,9 +360,11 @@
 		74E2F38515F04E4800D21D1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TKContactPicker/TKContactPicker-Prefix.pch";
 				INFOPLIST_FILE = "TKContactPicker/TKContactPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = TKContactPicker;
 				WRAPPER_EXTENSION = app;
 			};
