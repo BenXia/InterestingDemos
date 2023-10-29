@@ -20,8 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after app launch. 
-    [self.window addSubview:viewController.view];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.viewController = [[FilterDemoViewController alloc] init];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 
 	return YES;
